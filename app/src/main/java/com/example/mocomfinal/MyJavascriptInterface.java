@@ -16,8 +16,8 @@ public class MyJavascriptInterface {
         //위 자바스크립트가 호출되면 여기로 html이 반환됨
         Log.e("박상현", html);
 
-        new Thread(){
-            public void run(){
+        new Thread() {
+            public void run() {
                 Document document = null;
                 try {
                     document = Jsoup.parse(html);
@@ -27,14 +27,16 @@ public class MyJavascriptInterface {
                 }
 
                 Elements menu = document.select("div");
-                for (Element headline : menu){
+                for (Element headline : menu) {
                     Log.e("박상현z", headline.text());
                 }
             }
         }.start();
 
         //세컨드 커밋
-
         //마스터 브랜치 커밋
+        //브랜치 ㅋㅋㅋ
+        //브랜치 3
     }
 }
+
